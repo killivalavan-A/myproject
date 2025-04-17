@@ -1,0 +1,29 @@
+<section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+
+        <div class="flex">
+            <div id="form-container">
+                <h3>Contact Form</h3>
+                <form method="post" action="{% url 'contact' %}">  
+                    {% csrf_token %}  
+                    {{ form.as_p }}  
+                    <button class="rounded" type="submit">Send Message</button> 
+                </form>
+            </div>
+
+            <div id="address-container">
+                <label>Address</label>
+                <address>
+                    20377 Evergreen Terrace Mountain View, California, USA
+                </address>
+
+                <label>Phone</label>
+                <a href="#">232-232-2323</a>
+
+                <label>Email Address</label>
+                <a href="#">ouremail@domain.com</a>
+            </div>
+        </div>
+    </div>
+</section>

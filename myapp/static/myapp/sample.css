@@ -353,6 +353,10 @@ header ul.is-sticky li a.active {
     padding-left: 1rem;
 }
 
+#agents strong {
+    font-weight: bold;
+}
+
 #the-best {
     margin: 2rem 0;
 }

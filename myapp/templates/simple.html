@@ -7,12 +7,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Real Estate Website Landing Page</title>
+    <title>Real Estate </title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="{% static 'myapp/sample.css' %}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <style>html {
+        scroll-behavior: smooth;
+    }</style>
 </head>
 
 <body>
@@ -28,13 +31,13 @@
                     </button>
 
                     <ul id="nav-menu">
-                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#Home" class="active">Home</a></li>
                         <li><a href="#Properties">Properties</a></li>
                         <li><a href="#Agents">Agents</a></li>
                         <li><a href="#About">About</a></li>
-                        <li><a href="#News">Services</a></li>
+                        <li><a href="#Services">Services</a></li>
                         <!-- <li><a href="{% url 'contact' %}">Contact</a></li> -->
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#Contact">Contact</a></li>
                         <li id="close-flyout"><span class="fas fa-times"></span></li>
                     </ul>
                 </nav>
@@ -75,7 +78,7 @@
         </div>
     </section>
 
-    <section id="properties">
+    <section id="Properties">
         <div class="container">
             <h2>Properties</h2>
             <div id="properties-slider" class="slick">
@@ -149,7 +152,7 @@
         </div>
     </section>
 
-    <section id="agents">
+    <section id="Agents">
         <div class="container">
             <h2>Agents</h2>
             <p class="large-paragraph">Our experienced agents are here to provide expert advice and personalized service. With deep market knowledge and a commitment to your goals, we ensure you make informed decisions every step of the way.</p>
@@ -194,14 +197,14 @@
         </div>
     </section>
 
-    <section id="the-best">
+    <section id="About">
         <div class="flex container">
             <h2>About</h2>
            
             <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 1" />
             <div>
                 <h2>We Are the Best Real Estate Company</h2>
-                <p class="large-paragraph">We are committed to delivering unparalleled real estate services, offering expert guidance and exceptional value in every transaction.</p>
+                <p class="large-paragraph">We are <b>committed </b>to delivering unparalleled real estate services, offering expert guidance and exceptional value in every transaction.</p>
                 <p>Our team’s dedication and deep understanding of the market ensure you make the best decisions for your property needs. Whether buying, selling, or investing, we are your trusted partner in real estate.</p>
                 <ul>
                     <li>Our team of experienced professionals offers top-notch advice to help you make the right real estate decisions.</li>
@@ -215,7 +218,7 @@
         </div>
     </section>
 
-    <section id="services">
+    <section id="Services">
         <div class="container">
             <h2>Services</h2>
             <div class="flex">
@@ -267,7 +270,7 @@
                 <div>
                     <div class="fas fa-mobile-alt"></div>
                     <div class="services-card-right">
-                        <h3>Stated Apps</h3>
+                        <h3>Blessing Properties</h3>
                         <p>Access real estate solutions anytime, anywhere. Our mobile-friendly platform and apps offer seamless browsing, property management, and transaction tracking at your fingertips.</p>
                         <a href="#">Learn More</a>
                     </div>
@@ -313,13 +316,12 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="Contact">
         <div class="container">
             <h2>Contact Us</h2>
 
             <div class="flex">
                 <div id="form-container">
-                    <h3>Contact Form</h3>
                     <form method="post" action="{% url 'contact' %}">  
                         {% csrf_token %}  
                         {{ form.as_p }}  
@@ -359,7 +361,7 @@
         <div class="flex container">
             <div class="footer-about">
                 <h5>About</h5>
-                <p>We are a modern real estate platform built to simplify property buying, selling, and investing. With a focus on technology, trust, and transparency — Stated connects people to their perfect properties with ease and confidence.</p>
+                <p>We are a modern real estate platform built to simplify property buying, selling, and investing. With a focus on technology, trust, and transparency — Blessing Realestate connects people to their perfect properties with ease and confidence.</p>
             </div>
 
             <div class="footer-quick-links">
@@ -390,11 +392,11 @@
         </div>
 
         <small>
-            Copyright © 2019 All rights reserved | This template is made with <span class="fa fa-heart"></span> by <a href="https://colorlib.com">Colorlib</a>
+            Copyright © 2014 All rights reserved | This template is made with <span class="fa fa-heart"></span> by <a href="https://colorlib.com">Colorlib</a>
         </small>
     </footer>
 
-    <script src="{% static 'myapp/script.js' %}"></script>
+    <script src="{% static 'myapp/script.js'%}"></script>
 </body>
 
 </body>

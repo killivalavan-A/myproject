@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 body {
     font-family: "Roboto", "Helvetica", "Sans-serif";
     margin: 0;

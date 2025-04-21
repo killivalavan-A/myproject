@@ -7,6 +7,7 @@ $(function () {
    $('#properties-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
+        arrows:true,
         prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
         nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
         responsive: [
@@ -41,6 +42,7 @@ $(function () {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        arrows:true,
         prevArrow: '<a href="#" class="slick-arrow slick-prev"><</a>',
         nextArrow: '<a href="#" class="slick-arrow slick-next">></a>'
    });
@@ -81,4 +83,47 @@ $(function () {
    });
   
    $(document).trigger('scroll');
-  });
+  // Smooth scrolling for navigation links
+//   $('#nav-menu a[href^="#"]').on('click', function(event) {
+//     event.preventDefault();
+
+//     var target = $(this.getAttribute('href'));
+
+//     if (target.length) {
+//         $('html, body').animate({
+//             scrollTop: target.offset().top
+//         }, 800); // Adjust the duration (in milliseconds) for the scrolling speed
+//     }
+
+// Smooth scrolling for navigation links
+$('#nav-menu a[href^="#"]').on('click', function(event) {
+    event.preventDefault();
+
+    var target = $(this.getAttribute('href'));
+
+    if (target.length) {
+        
+        // Get the sticky header height
+        var headerHeight = $('header').outerHeight() || 100; // fallback if header not found
+
+        // Scroll instantly to target minus the header height
+        var scrollTo = target.offset().top - headerHeight - 10; // extra 10px space
+       
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 200,'linear'); // Changed duration from 800 to 500ms for faster scrolling
+    }
+
+    // Close the mobile menu after clicking a link (optional)
+    if ($(window).width() <= 991) {
+        navMenu.css('right', '-100%');
+    }
+});
+
+
+    // Close the mobile menu after clicking a link (optional)
+    if ($(window).width() <= 991) {
+        navMenu.css('right', '-100%');
+    }
+});
+;

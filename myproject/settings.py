@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'evolve',
         'USER': 'root',
-        'PASSWORD': '12345678',
+        'PASSWORD': '1234567890',
         'HOST': 'localhost',
         'PORT': '3306',
     }

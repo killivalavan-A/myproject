@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+/* html{
+    scroll-behavior: smooth;
+} */
 
 html {
     scroll-behavior: smooth;
@@ -357,26 +360,75 @@ header ul.is-sticky li a.active {
     padding-left: 1rem;
 }
 
+#agents strong {
+    font-weight: bold;
+}
+
 #the-best {
-    margin: 2rem 0;
-}
-
-#the-best .flex > img {
-    width: 47%;
-}
-
-#the-best .flex > div {
-    width: 40%;
-}
-
-#the-best ul {
-    padding-left: 20px;
-    margin-bottom: 4rem;
-}
-
-#the-best ul li {
-    margin: 10px 0;
-}
+    padding: 4rem 0;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #f7931e;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .about-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .about-image {
+    flex: 1 1 45%;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .about-content {
+    flex: 1 1 50%;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    color: #f7931e;
+    margin-bottom: 1rem;
+  }
+  
+  .about-content p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .about-content ul {
+    margin: 1rem 0;
+    padding-left: 1.2rem;
+  }
+  
+  .about-content ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  button.rounded {
+    padding: 0.7rem 1.5rem;
+    background-color: #f7931e;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
 
 #services {
     background: #f8f9fa;

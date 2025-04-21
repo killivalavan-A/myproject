@@ -13,13 +13,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
     <div id="header-hero-container">
         <header>
             <div class="flex container">
-                <a id="logo" href="#">Blessings</a>
+                <a id="logo" href="#" style="font-weight: bold; font-size: 24px; letter-spacing: 2px; color: #2c3e50; text-decoration: none;">
+                    <i class="fas fa-home" style="margin-right: 8px;"></i> BLESSING PROPERTIES
+                  </a>                  
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -28,13 +32,13 @@
                     </button>
 
                     <ul id="nav-menu">
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#Properties">Properties</a></li>
-                        <li><a href="#Agents">Agents</a></li>
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#News">Services</a></li>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#agents">Agents</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
                         <!-- <li><a href="{% url 'contact' %}">Contact</a></li> -->
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li id="close-flyout"><span class="fas fa-times"></span></li>
                     </ul>
                 </nav>
@@ -44,7 +48,7 @@
         <section id="hero">
             <div class="fade"></div>
             <div class="hero-text">
-                <h1>Buy and sell real estate properties</h1>
+                <h1>Buy And Sell Real Estate Properties</h1>
                 <p>Connecting people to places with purpose. We blend innovation and insight to make real estate simple, smart, and successful.</p>
             </div>
         </section>
@@ -80,7 +84,7 @@
             <h2>Properties</h2>
             <div id="properties-slider" class="slick">
                 <div>
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 1" />
+                    <img src="{% static 'images/house1.avif' %}" alt="Property 1" />
                     <div class="property-details">
                         <p class="price">₹3,400,000</p>
                         <span class="beds">6 beds</span>
@@ -93,7 +97,7 @@
                 </div>
 
                 <div>
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_2.jpg" alt="Property 1" />
+                    <img src="{% static 'images/house2.avif' %}" alt="Test Image" />
                     <div class="property-details">
                         <p class="price">₹34,00,000</p>
                         <span class="beds">6 beds</span>
@@ -106,7 +110,7 @@
                 </div>
 
                 <div>
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_3.jpg" alt="Property 1" />
+                    <img src="{% static 'images/house3.avif' %}" alt="Property 1" />
                     <div class="property-details">
                         <p class="price">₹34,00,000</p>
                         <span class="beds">6 beds</span>
@@ -119,7 +123,7 @@
                 </div>
 
                 <div>
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_4.jpg" alt="Property 1" />
+                    <img src="{% static 'images/house4.avif' %}" alt="Property 1" />
                     <div class="property-details">
                         <p class="price">₹34,00,000</p>
                         <span class="beds">6 beds</span>
@@ -132,7 +136,7 @@
                 </div>
 
                 <div>
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 1" />
+                    <img src="{% static 'images/house5.avif' %}" alt="Property 1" />
                     <div class="property-details">
                         <p class="price">₹34,00,000</p>
                         <span class="beds">6 beds</span>
@@ -156,66 +160,72 @@
 
             <div class="flex">
                 <div class="card">
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_1.jpg" alt="Realtor 1" />
-                    <h3>Ethiraj</h3>
+                    <img src="{% static 'images/agent1.webp' %}" alt="Realtor 1" />
+                    <h3>Alan</h3>
                     <p>Real Estate Agent</p>
                 </div>
 
                 <div class="card">
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_2.jpg" alt="Realtor 1" />
-                    <h3>Gayathri</h3>
+                    <img src="{% static 'images/agent2.webp' %}" alt="Realtor 1" />
+                    <h3>Stuward</h3>
                     <p>Real Estate Agent</p>
                 </div>
 
                 <div class="card">
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_3.jpg" alt="Realtor 1" />
-                    <h3>Monisha</h3>
+                    <img src="{% static 'images/agent3.webp' %}" alt="Realtor 1" />
+                    <h3>Mark</h3>
                     <p>Real Estate Agent</p>
                 </div>
 
                 <div class="card">
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_4.jpg" alt="Realtor 1" />
-                    <h3>Baris khan</h3>
+                    <img src="{% static 'images/agent4.webp' %}" alt="Realtor 1" />
+                    <h3>Jack</h3>
                     <p>Real Estate Agent</p>
                 </div>
 
                 <div class="card">
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_5.jpg" alt="Realtor 1" />
-                    <h3>Silambarasan</h3>
+                    <img src="{% static 'images/agent6.jpg' %}" alt="Realtor 1" />
+                    <h3>Alexandra dadario</h3>
                     <p>Real Estate Agent</p>
                 </div>
 
                 <div class="card">
-                    <img src="https://onclickwebdesign.com/wp-content/uploads/person_6.jpg" alt="Realtor 1" />
-                    <h3>Nirmal</h3>
+                    <img src="{% static 'images/agent7.webp' %}" alt="Realtor 1" />
+                    <h3>Penelope crux</h3>
                     <p>Real Estate Agent</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="the-best">
-        <div class="flex container">
-            <h2>About</h2>
-           
-            <img src="https://onclickwebdesign.com/wp-content/uploads/property_1.jpg" alt="Property 1" />
-            <div>
-                <h2>We Are the Best Real Estate Company</h2>
-                <p class="large-paragraph">Our company was Founded in <strong>2014</strong> with the vision of delivering exceptional value to our customers. Over the years, we have grown into a trusted name, dedicated to innovation and excellence.</p>
-            </p>
-                <p>Our team’s dedication and deep understanding of the market ensure you make the best decisions for your property needs. Whether buying, selling, or investing, we are your trusted partner in real estate.</p>
-                <ul>
-                    <li>Our team of experienced professionals offers top-notch advice to help you make the right real estate decisions.</li>
-                    <li>We tailor our approach to meet your unique needs, ensuring a seamless and stress-free experience.</li>
-                    <li>With deep insights into the local and global real estate market, we bring you the best opportunities for buying, selling, and investing.</li>
-                    <li>Your satisfaction is our priority. We go above and beyond to ensure your needs are met and your goals are achieved.</li>
-                    <li>Our track record speaks for itself. We have successfully helped hundreds of clients find their dream properties and make profitable investments.</li>
-                </ul>
-                <button class="rounded">Learn More</button>
+    <section id="about">
+        <div class="container">
+          <h2 class="section-title">About</h2>
+          <div class="about-flex">
+            <div class="about-image">
+              <img src="{% static 'images/about4.jpg' %}" alt="Property 1" />
             </div>
+            <div class="about-content">
+              <h2>We Are the Best Real Estate Company</h2>
+              <p class="large-paragraph">
+                Our company was Founded in <strong>2014</strong> with the vision of delivering exceptional value to our customers. Over the years, we have grown into a trusted name, dedicated to innovation and excellence.
+              </p>
+              <p>
+                Our team’s dedication and deep understanding of the market ensure you make the best decisions for your property needs. Whether buying, selling, or investing, we are your trusted partner in real estate.
+              </p>
+              <ul>
+                <li>Our team of experienced professionals offers top-notch advice to help you make the right real estate decisions.</li>
+                <li>We tailor our approach to meet your unique needs, ensuring a seamless and stress-free experience.</li>
+                <li>With deep insights into the local and global real estate market, we bring you the best opportunities for buying, selling, and investing.</li>
+                <li>Your satisfaction is our priority. We go above and beyond to ensure your needs are met and your goals are achieved.</li>
+                <li>Our track record speaks for itself. We have successfully helped hundreds of clients find their dream properties and make profitable investments.</li>
+              </ul>
+              <button class="rounded">Learn More</button>
+            </div>
+          </div>
         </div>
     </section>
-
+      
     <section id="services">
         <div class="container">
             <h2>Services</h2>
@@ -286,7 +296,7 @@
                         <p>"I couldn’t be more satisfied with my experience. The team guided me every step of the way, and I found my dream home with ease. Their professionalism and dedication are unmatched!"</p>
                     </blockquote>
                     <div class="testimonials-caption">
-                        <img src="https://onclickwebdesign.com/wp-content/uploads/person_7.jpg" alt="Client 7" />
+                        <img src="{% static 'images/Customer3.png' %}" alt="Client 7" />
                         <p>Priya</p>
                     </div>
                 </div>
@@ -296,8 +306,8 @@
                         <p>"As a first-time investor, I was a bit overwhelmed, but the experts at Blessings properties made the process so simple. They helped me make smart investment decisions, and I’m already seeing great returns!"</p>
                     </blockquote>
                     <div class="testimonials-caption">
-                        <img src="https://onclickwebdesign.com/wp-content/uploads/person_5.jpg" alt="Client 7" />
-                        <p>Devika</p>
+                        <img src="{% static 'images/customer4.png' %}" alt="Client 7" />
+                        <p>James</p>
                     </div>
                 </div>
 
@@ -306,8 +316,8 @@
                         <p>"Selling my property was a breeze with this team. They understood my needs, got me the best offer, and handled all the paperwork. Highly recommended for anyone looking to buy or sell."</p>
                     </blockquote>
                     <div class="testimonials-caption">
-                        <img src="https://onclickwebdesign.com/wp-content/uploads/person_8.jpg" alt="Client 7" />
-                        <p>Franklin</p>
+                        <img src="{% static 'images/customer5.png' %}" alt="Client 7" />
+                        <p>Robbie</p>
                     </div>
                 </div>
             </div>
@@ -382,10 +392,20 @@
 
                 <h5 class="follow-us">Follow Us</h5>
                 <ul>
-                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                    <li>
+                        <a href="https://www.facebook.com/">
+                          <span class="fab fa-facebook-f"></span>
+                        </a>
+                      </li>
+                      
+                    <li><a href="https://x.com/"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="https://www.instagram.com/"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="https://www.linkedin.com/"><span class="fab fa-linkedin-in"></span></a></li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                          <span class="fab fa-youtube"></span>
+                        </a>
+                      </li>
                 </ul>
             </div>
         </div>
